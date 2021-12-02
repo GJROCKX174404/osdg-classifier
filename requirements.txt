@@ -1,4 +1,4 @@
 pdfplumber ==0.5.28
 numpy ==1.19.5
 sklearn ==1.0.1
-
+streamlit ==1.2.0
