@@ -27,7 +27,7 @@ def classify(a):
             ,"Reduced Inequalites","Sustainable Cities and Communities",
             "Responsible Consumption and Production","Climate Action","Life Below Water","Life On Land"]
     t =zip(li_goals,test_res)
-    df_predic = pd.DataFrame(t,columns=["SDG","Probability"])
+    df_predic = pd.DataFrame(t,columns=["SD Goals","Probability"])
     df_predic.index = df_predic.index + 1
     return((df_predic))
     
@@ -35,7 +35,7 @@ def classify(a):
 
 with header:
     titl, imga = st.beta_columns(2)
-    st.title('Sustainable Development Goal Classification') 
+    st.title('Classification of Documents into SDG') 
      
 
 with body:
@@ -46,7 +46,7 @@ with body:
         'Choose your .txt file', type="txt")
     if uploaded_file is not None:
         rawtext = str(uploaded_file.read(), 'utf-8')
-    if st.button('Get Results'):
+    if st.button('Check out Classification'):
         with classify_container:
             if rawtext == "":
                 st.header('Results')
