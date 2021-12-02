@@ -2,6 +2,6 @@ numpy ==1.19.5
 sklearn ==0.0
 streamlit ==0.83.0
 pdfplumber ==0.5.28
-pdfminer=20200517
+pdfminer ==20200517
 
 
